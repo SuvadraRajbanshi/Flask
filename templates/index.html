@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subu Frontend Development</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+</head>
+
+<body>
+    <img src="{{url_for('static',filename='farmer.png')}}" alt="farmer with plants" width="100%" height="400px">
+    <div id="a">
+    <h1>Farmer Assistant With Plant Disease Detection</h1></div>
+    <nav >
+           <a href="{{url_for('index')}}">Home</a>
+           <a href="{{url_for('about')}}">About Us</a>
+           <a href="{{url_for('contact')}}">Contact Us</a>
+           <a href="{{url_for('index')}}">Login</a>
+    </nav>
+    <div id="d">
+        <table  style="width: 250px; height: 200px; border: 2px solid green; margin: 80px;">
+            <td><a href="{{url_for('farmer')}}"><img src="{{url_for('static',filename='farmer2.png')}}" alt="farmer"  width="200px" height="100px" style="padding: 30px;"> </a><br>
+                <a id="an" href="{{url_for('farmer')}}">Farmer login</a></td>
+</table>
+
+        <table style="width: 250px; height: 200px; border: 2px solid green; margin: 80px;">
+            <td><a href="{{url_for('admin')}}"><img src="{{url_for('static',filename='admin.png')}}" alt="farmer"  width="200px" height="100px" style="padding: 30px;"> </a><br>
+                <a id="bn" href="{{url_for('admin')}}">Admin login</a></td> 
+        </table>
+      
+        <table  style="width: 250px; height: 200px; border: 2px solid green; margin: 80px;">
+            <td><a href="{{url_for('expert')}}"><img src="{{url_for('static',filename='expert.png')}}" alt="farmer"  width="200px" height="100px" style="padding: 30px;"> </a><br>
+                <a id="bn" href="{{url_for('expert')}}">Expert login</a></td>    
+        </table>
+    
+
+    </div>
+
+
+</body>
+</html>
